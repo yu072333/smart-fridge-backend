@@ -9,6 +9,17 @@ const { GoogleGenerativeAI } = require('@google/generative-ai');
 const app = express();
 app.use(express.json());
 
+// ===================================
+// 0️⃣ 健康檢查與首頁測試
+// ===================================
+app.get('/', (req, res) => {
+  res.send('🚀 Smart Fridge Backend 正常運作中！');
+});
+
+app.get('/api/ping', (req, res) => {
+  res.json({ message: '✅ Server 運作中' });
+});
+
 // ✅ CORS：允許前端（Vercel）及本地端連線
 app.use(
   cors({
