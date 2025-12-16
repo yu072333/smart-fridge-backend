@@ -14,7 +14,7 @@ app.use(
   cors({
     origin: [
       'http://localhost:3000',
-      'https://smart-fridge-yuxuan.vercel.app',
+      'https://smart-fridge-frontend.vercel.app',
       'https://smart-fridge-backend-zbkd.onrender.com',
     ],
     methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
